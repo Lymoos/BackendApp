@@ -1,4 +1,5 @@
 # backendApp
+>Использованная база данных: sqlite
 ### Документация:
 ```
 http://localhost:8000/docs
