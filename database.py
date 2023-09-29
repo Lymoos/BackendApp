@@ -9,7 +9,6 @@ def dict_factory(cursor, row):#перевод в json
         d[col[0]] = row[idx]
     return d
 
-
 def db_usersRead(user_id):#чтение всей таблицы users из базы данных
     db = sqlite3.connect('backend.db',check_same_thread=False)
     conn = db.cursor()

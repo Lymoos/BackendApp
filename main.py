@@ -1,15 +1,13 @@
 from fastapi import FastAPI
 import database
-import json
-from typing import Optional
 app = FastAPI(
     title="bookingApp"
 )
 
 #Выполнение запросов к сущности User
-@app.get("/users/id") # получение данных о пользователе по его id
-def userRead(user_id:int):
-    return database.db_usersRead(user_id)
+@app.get("/users/{id}") # получение данных о пользователе по его id
+def userRead(id:int):
+    return database.db_usersRead(id)
 @app.get("/users")
 def userReadAll():
     return database.db_usersReadAll()
