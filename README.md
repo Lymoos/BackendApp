@@ -9,7 +9,7 @@ http://localhost:8000/docs
 pip install fastapi[all]
 ```
 ### Запуск:
-1. Запускаем файл database.py
+1. Запускаем файл data_Create.py
 2. Вписываем в терминал:
    ```bash
    uvicorn main:app --reload
